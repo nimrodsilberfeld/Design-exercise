@@ -1,0 +1,21 @@
+.MainContent {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 1100px) {
+    .MainContent {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .MainContent {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 570px) {
+    .MainContent {
+        width: 95%;
+    }
+}

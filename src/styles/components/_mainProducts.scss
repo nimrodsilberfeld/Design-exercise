@@ -1,0 +1,9 @@
+.products {
+    width: 100%;
+}
+.products_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

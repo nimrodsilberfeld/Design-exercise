@@ -1,0 +1,100 @@
+.footer {
+    padding: 1rem 0 1rem 0;
+    background-color: #242323;
+}
+.footer_content {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.right_footer {
+    color: white;
+    h3 {
+        font-size: 0.825rem;
+    }
+}
+.newsLetter_wrapper {
+    position: relative;
+}
+.signInput {
+    width: 80%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #242323;
+    border: 1px solid gray;
+    outline: none;
+    color: white;
+}
+.signBtn {
+    position: absolute;
+    left: 70px;
+    padding: 11px;
+    border-radius: 20px;
+    outline: none;
+    //border: 1px solid gray;
+    border: none;
+    background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+    color: white;
+    font-weight: bold;
+}
+.left_footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.footer_logos {
+    align-self: flex-end;
+    height: 70%;
+    img {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    // .footer_content {
+    //     width: 90%;
+    // }
+    .footer_content {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left_footer {
+        justify-content: center;
+    }
+    .right_footer {
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+    .footer_logos {
+        img {
+            width: 40vw;
+        }
+    }
+    .newsLetter_wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .signBtn {
+        left: 23px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .footer_logos {
+        img {
+            width: 70vw;
+        }
+    }
+    .newsLetter_wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .signInput {
+        width: 100%;
+    }
+    .signBtn {
+        left: -10px;
+    }
+}
